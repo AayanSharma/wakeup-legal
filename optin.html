@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opt-in Workflow</title>
+</head>
+<body>
+<h1>Opt-in Workflow - APP_NAME_HERE</h1>
+
+<p>APP_NAME_HERE is a prototype wake-up verification app. This page documents how recipients consent before receiving texts. Contact: EMAIL_HERE. See the <a href="terms.html">Terms and Conditions</a> and the <a href="privacy.html">Privacy Policy</a>.</p>
+
+<h2>1. The user (alarm owner)</h2>
+<p>The user enters their own mobile number in the app and sets an alarm. They only receive wake-up questions for alarms they created. Reply STOP to opt out. Reply HELP for help.</p>
+
+<h2>2. The trusted contact (optional, double opt-in by text)</h2>
+<p>If the user adds a trusted contact's number, the only message sent to that number is this welcome and consent request, sent from TOLLFREE_NUMBER_HERE:</p>
+<pre>Sam added you as a wake-up accountability contact for "get up for school", alarm Tue Oct 13 at 06:30 AM CDT. If they don't respond to wake-up texts, you'll get one alert text per alarm. Reply YES to agree or NO to decline. Msg&amp;data rates may apply. Reply HELP for help, STOP to opt out. Terms: TERMS_URL_HERE Privacy: PRIVACY_URL_HERE</pre>
+<p><b>Opt-in keyword:</b> the contact replies YES from their own number. The service accepts the reply only from the number the consent message was sent to.</p>
+<p><b>Message frequency:</b> a contact receives the consent message and, only after replying YES, at most one alert text per alarm.</p>
+
+<h2>3. Confirmation message (sent after YES)</h2>
+<pre>You're all set! You'll only get a text if they don't wake up. Reply STOP to opt out.</pre>
+<ul>
+    <li>Reply NO, or no reply: the contact receives no further messages.</li>
+    <li>Reply STOP at any time: all texts to that number stop.</li>
+</ul>
+
+<h2>4. Example messages</h2>
+<p>To the user:</p>
+<pre>Work left to right: 9 * 2 * 2 = ?</pre>
+<p>To a trusted contact (only after they replied YES):</p>
+<pre>Sam did not wake up after 2 attempts to wake them up! Please wake them up if available.</pre>
+</body>
+</html>
